@@ -4,8 +4,8 @@ import pandas as pd
 
 
 def compute_max_temp(df):
-    grouped_Dates = df.groupby('date')
-    return grouped_Dates['temp'].max().tolist()
+    grouped = df.groupby('date')
+    return grouped['temp'].max().tolist()
 
 
 if __name__ == "__main__":
