@@ -5,8 +5,8 @@ import pandas as pd
 
 def compute_max_temp(df):
     grouped_Dates = df.groupby('date')
-    maximums = grouped_Dates['temp'].max()
-    return maximums.tolist()
+    return = grouped_Dates['temp'].max().tolist()
+
 
 if __name__ == "__main__":
     # load your dataframe from data/melbourne.18_08_2020.22_08_2020.csv
